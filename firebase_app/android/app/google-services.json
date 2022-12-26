@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "514221203325",
+    "project_id": "skillbox-firebase-6c6e9",
+    "storage_bucket": "skillbox-firebase-6c6e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514221203325:android:a9db48df3e180a4b197614",
+        "android_client_info": {
+          "package_name": "com.example.firebase_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514221203325-t71612fj4ri16n4mvfcv8j1h329b4etm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANfUkgzveuCrToZgzokRPhPfiKtcT86OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514221203325-t71612fj4ri16n4mvfcv8j1h329b4etm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "514221203325-4ef73eeg34bajv974if68us5vk546si0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebaseApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
