@@ -1,6 +1,8 @@
+import 'package:firebase_app/domain/items_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-import '../../domain/firebase_funcs.dart';
+import 'my_home_page.dart';
 
 TextEditingController loginController = TextEditingController();
 TextEditingController passwordController = TextEditingController();
@@ -28,8 +30,16 @@ class LoginPage extends StatelessWidget {
                   hintText: "Пароль", helperText: "17011991"),
             ),
             ElevatedButton(
-                onPressed: () {
-                  signInWithEmailAndPassword(context);
+                onPressed: () async {
+                  context.read<ItemsProvider>().signInWithEmailAndPassword();
+                  if (await Provider.of<ItemsProvider>(context, listen: false)
+                      .signInWithEmailAndPassword()
+                      .then((value) => value)) {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const MyHomePage(
+                              title: "Firebase app",
+                            )));
+                  }
                 },
                 child: const Text("Войти")),
           ],
